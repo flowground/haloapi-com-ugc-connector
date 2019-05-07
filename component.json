@@ -1,0 +1,110 @@
+{
+    "title": "UGC",
+    "description": "API that provides Metadata about User-Generated Content (Maps and Game Variants).",
+    "docsUrl": "",
+    "url": "https://api.apis.guru/v2/specs/haloapi.com/ugc/1.0/swagger.json",
+    "envVars": {},
+    "credentials": {
+        "fields": {
+            "server": {
+                "label": "Server",
+                "viewClass": "SelectView",
+                "model": [
+                    "https://www.haloapi.com/ugc",
+                    "--- Custom URL"
+                ],
+                "required": true
+            },
+            "otherServer": {
+                "label": "Custom Server URL",
+                "viewClass": "TextFieldView"
+            },
+            "apiKeyHeader": {
+                "label": "Ocp-Apim-Subscription-Key (apiKeyHeader)",
+                "viewClass": "TextFieldView"
+            },
+            "apiKeyQuery": {
+                "label": "subscription-key (apiKeyQuery)",
+                "viewClass": "TextFieldView"
+            }
+        }
+    },
+    "triggers": {
+        "startFlow": {
+            "main": "./lib/triggers/startFlow.js",
+            "type": "polling",
+            "title": "Start Flow",
+            "fields": {}
+        }
+    },
+    "actions": {
+        "action_58acde292109180bdcacc40d": {
+            "main": "./lib/actions/action_58acde292109180bdcacc40d.js",
+            "title": "Halo 5 - Player Game Variants",
+            "description": "<p>Retrieves a list of Game Variants created by a Player.</p>\n<br />\n<h4>Changelog</h4>\n<div class=\"panel-body\">\n    <p><strong>February 21, 2017:</strong></p>\n    <ul>\n        <li>Renamed Endpoint from \"List Game Variants\" to \"Halo 5 - Player Game Variants\".</li>\n        <li>Removed \"{title}\" Request Parameter.</li>\n    </ul>\n</div>\n<div class=\"panel-body\">\n    <p><strong>August 5, 2016:</strong></p>\n    <ul>\n        <li>Added Endpoint.</li>\n    </ul>\n</div>\n",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/action_58acde292109180bdcacc40d.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "action_58acde292109180bdcacc40c": {
+            "main": "./lib/actions/action_58acde292109180bdcacc40c.js",
+            "title": "Halo 5 - Player Game Variant",
+            "description": "<p>Retrieves Metadata about a Player-created Game Variant.</p>\n<br />\n<h4>Changelog</h4>\n<div class=\"panel-body\">\n    <p><strong>February 21, 2017:</strong></p>\n    <ul>\n        <li>Renamed Endpoint from \"Get Game Variant\" to \"Halo 5 - Player Game Variant\".</li>\n        <li>Removed \"{title}\" Request Parameter.</li>\n    </ul>\n</div>\n<div class=\"panel-body\">\n    <p><strong>August 5, 2016:</strong></p>\n    <ul>\n        <li>Added Endpoint.</li>\n    </ul>\n</div>\n",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/action_58acde292109180bdcacc40c.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "action_58acde292109180bdcacc40f": {
+            "main": "./lib/actions/action_58acde292109180bdcacc40f.js",
+            "title": "Halo 5 - Player Map Variants",
+            "description": "<p>Retrieves a list Map Variants created by a Player.</p>\n<br />\n<h4>Changelog</h4>\n<div class=\"panel-body\">\n    <p><strong>February 21, 2017:</strong></p>\n    <ul>\n        <li>Renamed Endpoint from \"List Map Variants\" to \"Halo 5 - Player Map Variants\".</li>\n        <li>Removed \"{title}\" Request Parameter.</li>\n    </ul>\n</div>\n<div class=\"panel-body\">\n    <p><strong>August 5, 2016:</strong></p>\n    <ul>\n        <li>Added Endpoint.</li>\n    </ul>\n</div>\n",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/action_58acde292109180bdcacc40f.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "action_58acde292109180bdcacc40e": {
+            "main": "./lib/actions/action_58acde292109180bdcacc40e.js",
+            "title": "Halo 5 - Player Map Variant",
+            "description": "<p>Retrieves Metadata about a Player-created Map Variant.</p>\n<br />\n<h4>Changelog</h4>\n<div class=\"panel-body\">\n    <p><strong>February 21, 2017:</strong></p>\n    <ul>\n        <li>Renamed Endpoint from \"Get Map Variant\" to \"Halo 5 - Player Map Variant\".</li>\n        <li>Removed \"{title}\" Request Parameter.</li>\n    </ul>\n</div>\n<div class=\"panel-body\">\n    <p><strong>August 5, 2016:</strong></p>\n    <ul>\n        <li>Added Endpoint.</li>\n    </ul>\n</div>\n",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/action_58acde292109180bdcacc40e.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        }
+    }
+}

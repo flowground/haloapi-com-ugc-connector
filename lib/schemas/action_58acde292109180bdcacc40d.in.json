@@ -1,0 +1,21 @@
+{
+    "type": "object",
+    "properties": {
+        "player": {
+            "required": true,
+            "type": "string"
+        },
+        "start": {
+            "type": "number"
+        },
+        "count": {
+            "type": "number"
+        },
+        "sort": {
+            "type": "number"
+        },
+        "order": {
+            "type": "number"
+        }
+    }
+}
